@@ -1,0 +1,184 @@
+/* Allgemeine Stile für den gesamten Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Stile für das zentrierte Element */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Stile für die Überschrift innerhalb des zentrierten Elements */
+  .center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #443b3b;
+  }
+  
+  /* Stile für das Formular innerhalb des zentrierten Elements */
+  .center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  /* Stile für die Eingabefelder im Formular */
+  form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  
+  /* Stile für die Texteingabe in den Eingabefeldern */
+  .txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  /* Stile für die Labels über den Eingabefeldern */
+  .txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  /* Stile für die animierte Linie unter den Eingabefeldern */
+  .txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+  
+  /* Stile für das Label, wenn ein Eingabefeld den Fokus hat oder ein Wert hat */
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+  }
+  
+  /* Stile für die animierte Linie, wenn ein Eingabefeld den Fokus hat oder ein Wert hat */
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before {
+    width: 100%;
+  }
+  
+  /* Stile für den "Submit" Button */
+  input[type="submit"] {
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -1px -1px 3px #8e44ad;
+  }
+  
+  /* Stile für den "Submit" Button, wenn der Mauszeiger darüber schwebt */
+  input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+    transform: scale(1.1);
+  }
+  
+  /* Stile für den "Reset" Button */
+  input[type="reset"] {
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: red;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    box-shadow: -1px -1px 3px #8e44ad;
+  }
+  
+  /* Stile für den "Reset" Button, wenn der Mauszeiger darüber schwebt */
+  input[type="reset"]:hover {
+    border-color: #2691d9;
+    transition: .5s;
+    transform: scale(1.1);
+  }
+  
+  /* Stile für die Info-Nachricht */
+  .info {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  /* Stile für Links in der Info-Nachricht */
+  .info a {
+    color: #2691d9;
+    text-decoration: none;
+  }
+  
+  /* Stile für Links in der Info-Nachricht, wenn der Mauszeiger darüber schwebt */
+  .info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Stile für das Select-Menü */
+  #select {
+    font-family: cursive;
+    border: none;
+    color: #adadad;
+    font-size: 16px;
+    width: 320px;
+    outline: none;
+    transition: .5s;
+    height: 40px;
+  }
+  
+  /* Media Query für kleine Bildschirme mit einer Breite von maximal 600px */
+  @media (max-width: 600px) {
+    .center {
+      width: 90%;
+    }
+  }
+  
+  /* Media Query für sehr kleine Bildschirme mit einer Breite von maximal 400px */
+  @media (max-width: 400px) {
+    .center {
+      width: 100%;
+    }
+  }
+  

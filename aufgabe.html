@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload</title>
+  <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+<body>
+  <div class="center">
+    <h1>Upload Aufgabe</h1> 
+    <form method="post">
+      <!-- Name -->
+      <div class="txt_field">
+        <input type="text" required>
+        <span></span>
+        <label>Name</label>
+      </div>
+      <!-- Beschreibung -->
+      <div class="txt_field">
+        <input type="text" required>
+        <label>Beschreibung</label>
+        <span></span>
+      </div>
+      <!-- Hinweis -->
+      <div class="txt_field">
+        <input type="text" required>
+        <label>Hinweis</label>
+        <span></span>
+      </div>
+      <!-- Fach -->
+      <div class="txt_field">
+        <label for="fach"></label>
+        <select id="select" required>
+          <option value="">Fach</option>
+          <option value="fach1">Einführung Informatik</option>
+          <option value="fach2">Einführung Programmierung</option>
+          <option value="fach3">Computer Architktur</option>
+        </select>
+        <span></span>
+      </div>
+      <!-- Kategorie -->
+      <div class="txt_field">
+        <label for="Kategorie"></label>
+        <select id="select" required>
+          <option value="">Kategorie</option>
+          <option value="fach1">Kategorie 1 </option>
+          <option value="fach2">Kategorie 2</option>
+          <option value="fach3">Kategorie 3</option>
+        </select>
+      </div>
+      <!-- Neue Kategorie -->
+      <div class="txt_field">
+        <input type="text" required>
+        <label>neue Kategorie</label>
+        <span></span>
+      </div>
+      <div>
+        <!-- Hochladen und Abbrechen -->
+        <input type="submit" value="Hochladen">
+        <input type="reset" value="Abbrechen">
+        <div class="info">for more information <a href="#">Info</a></div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
