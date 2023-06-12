@@ -4,64 +4,60 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Upload</title>
-  <link rel="stylesheet" type="text/css" href="styless.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styless.css">
 </head>
 <body>
-  <div class="center">
-    <h1>Upload Aufgabe</h1> 
-    <form method="post">
-      <!-- Name -->
-      <div class="txt_field">
-        <input type="text" required>
-        <span></span>
-        <label>Name</label>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 bg-white p-4 rounded">
+        <h1 class="text-center mb-4">Upload Aufgabe</h1>
+        <hr class="border-top border-1 border-secondary w-100 mb-5">
+        <form method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="beschreibung" class="form-label">Beschreibung</label>
+            <input type="text" class="form-control" id="beschreibung" required>
+          </div>
+          <div class="mb-3">
+            <label for="hinweis" class="form-label">Hinweis</label>
+            <input type="text" class="form-control" id="hinweis" required>
+          </div>
+          <div class="mb-3">
+            <label for="fach" class="form-label">Fach</label>
+            <select class="form-select" id="fach" required>
+              <option value="fach1">Einführung Informatik</option>
+              <option value="fach2">Einführung Programmierung</option>
+              <option value="fach3">Computer Architektur</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="kategorie" class="form-label">Kategorie</label>
+            <select class="form-select" id="kategorie" required>
+              <option value="kategorie1">Kategorie 1</option>
+              <option value="kategorie2">Kategorie 2</option>
+              <option value="kategorie3">Kategorie 3</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="neueKategorie" class="form-label">Neue Kategorie</label>
+            <input type="text" class="form-control" id="neueKategorie" required>
+          </div>
+          <div class="text-center">
+            <div class="col-12 mt-5">
+              <input type="submit" class="btn btn-primary rounded-5 w-100" value="Hochladen">
+            </div>
+            <div class="col-12 mt-3 mb-5">
+              <input type="reset" class="btn btn-danger rounded-5 w-100" value="Abbrechen">
+            </div>
+            <div class="mt-3">For more information <a href="#">Info</a></div>
+          </div>
+        </form>
       </div>
-      <!-- Beschreibung -->
-      <div class="txt_field">
-        <input type="text" required>
-        <label>Beschreibung</label>
-        <span></span>
-      </div>
-      <!-- Hinweis -->
-      <div class="txt_field">
-        <input type="text" required>
-        <label>Hinweis</label>
-        <span></span>
-      </div>
-      <!-- Fach -->
-      <div class="txt_field">
-        <label for="fach"></label>
-        <select id="select" required>
-          <option value="">Fach</option>
-          <option value="fach1">Einführung Informatik</option>
-          <option value="fach2">Einführung Programmierung</option>
-          <option value="fach3">Computer Architktur</option>
-        </select>
-        <span></span>
-      </div>
-      <!-- Kategorie -->
-      <div class="txt_field">
-        <label for="Kategorie"></label>
-        <select id="select" required>
-          <option value="">Kategorie</option>
-          <option value="fach1">Kategorie 1 </option>
-          <option value="fach2">Kategorie 2</option>
-          <option value="fach3">Kategorie 3</option>
-        </select>
-      </div>
-      <!-- Neue Kategorie -->
-      <div class="txt_field">
-        <input type="text" required>
-        <label>neue Kategorie</label>
-        <span></span>
-      </div>
-      <div>
-        <!-- Hochladen und Abbrechen -->
-        <input type="submit" value="Hochladen">
-        <input type="reset" value="Abbrechen">
-        <div class="info">for more information <a href="#">Info</a></div>
-      </div>
-    </form>
+    </div>
   </div>
 </body>
 </html>

@@ -1,41 +1,16 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(120deg,#2980b9,#8e44ad);
-    
-  }
-  .card{
-    width: 350px;
-   height: 400px;
-    
-  }
-  .text-center{
-    font-family:  Georgia, 'Times New Roman', Times, serif;;
-   
-  }
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  .btn {
-    width: 250px;
-    font-family: cursive;
-  }
-  .btn:hover{
-    transform: scale(1.1);
-    transition: .5s;
-  }
-
-/* Styling für Bild in Button */
- img {
-  width: 15px;
-  height: 15px;
-  margin-right: 15px;
-  margin-left: -15px;
+  height: 100vh;
+  background: linear-gradient(120deg,#2980b9,#8e44ad);
+  font-family: cursive;
+}
+.menu-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.btn-img {
+  width: 20px;
+  height: 20px;
+}
  
 
 

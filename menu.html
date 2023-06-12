@@ -1,51 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    
-    <!-- Card-Container -->
-    <div class="card w-40 h-76 text-center ">
-      <div class="container">
-        <h1 class="mt-3"><a href="menu.html">Main Menu</a></h1>
-
-        <hr>
-
-        <div class="card-body d-flex flex-column align-items-center">
-          <!-- Button 1: Aufgabe suchen -->
-          <a href="#" class="btn btn-primary btn-block mb-3 shadow-lg rounded-5">
-            <img src="images/suche1.png" alt="Aufgaben Logo" class="mr-2">
-            Aufgabe suchen
-          </a>
-
-          <!-- Button 2: Bedienungshilfe -->
-          <a href="#" class="btn btn-primary btn-block mb-3 shadow-lg rounded-5">
-            <img src="images/megaphon (1).png" alt="Bedienungshilfe Logo" class="mr-2">
-            Bedienungshilfe
-          </a>
-
-          <!-- Button 3: Dozent Login -->
-          <a href="dozent.html" class="btn btn-primary btn-block mb-3 shadow-lg rounded-5">
-            <img src="images/benutzer.png" alt="Dozent Login Logo" class="mr-2">
-            Dozent Login
-          </a>
-
-          <!-- Button 4: About -->
-          <a href="#" class="btn btn-primary btn-block mb-3 shadow-lg rounded-5">
-            <img src="images/globus.png" alt="About Logo" class="mr-2">
-            About
-          </a>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+    <div class="d-flex flex-column bg-light rounded-3 p-5 justify-content-center align-items-center">
+      <a class="fs-2 text-dark text-decoration-none" href="">Mein Menu</a>
+      <hr class="border-top border-1 border-secondary w-100 mb-5">
+      <div class="d-grid gap-3">
+        <a class="btn btn-lg btn-primary rounded-5 text-white" href="">
+          <div class="d-flex align-items-center">
+            <img class="me-2" src="images/suche1.png" alt="">
+            <h4>Aufgabe Suchen</h4>
+          </div>
+        </a>
+        <a class="btn btn-lg btn-danger rounded-5 text-white" href="">
+          <div class="d-flex align-items-center">
+            <img class="me-2" src="images/megaphon (1).png" alt="">
+            <h4>Bedienungshilfe</h4>
+          </div>
+        </a>
+        <a class="btn btn-lg btn-success rounded-5 text-white" href="dozent.html">
+          <div class="d-flex align-items-center">
+            <img class="me-2" src="images/benutzer.png" alt="">
+            <h4>Dozint Login</h4>
+          </div>
+        </a>
+        <a class="btn btn-lg btn-info rounded-5 text-white" href="">
+          <div class="d-flex align-items-center">
+            <img class="me-2" src="images/globus.png" alt="">
+            <h4>About</h4>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-4">
+        For more information <a href="#">Info</a>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

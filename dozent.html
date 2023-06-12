@@ -4,37 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LOGIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <div class="center">
-      <!-- Überschrift -->
-      <h1>Dozent</h1> 
-      <!-- Formular für den Login -->
-      <form method="post">
-        <!-- Eingabefeld für den Benutzernamen -->
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>Username</label>
-        </div>
-        <!-- Eingabefeld für das Passwort -->
-        <div class="txt_field">
-          <input type="text" required>
-          <label>Password</label>
-          <span></span>
-        </div>
-        <!-- Passwort vergessen? -->
-        <div class="pass">Forgot Password ?</div>
-        <!-- Login-Button -->
-        <input type="submit" value="Login">
-        <!-- Abbrechen-Button -->
-        <input type="reset" value="Cancel">
-        <!-- Info-Nachricht -->
-        <div class="info">
-          for more information <a href="#">Info</a>
-        </div>
-      </form>
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column bg-light rounded-3 p-5 main-layout justify-content-center align-items-center">
+        <h1 class="main-text-center mb-4">Dozent</h1>
+        <hr class="border-top border-1 border-secondary w-100 mb-5">
+        <form method="post">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <a class="text-decoration-none" href="#">Forgot Password ?</a>
+          </div>
+          <div class="d-grid gap-2">
+            <input type="submit" class="btn btn-primary rounded-5" value="Login">
+            <input type="reset" class="btn btn-danger rounded-5" value="Cancel">
+          </div>
+          <div class="text-center mt-4">
+            For more information <a href="#">Info</a>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
