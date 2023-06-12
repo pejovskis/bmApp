@@ -1,60 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Upload</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styless.css">
-</head>
-<body>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-4 bg-white p-3 rounded">
-        <h1 class="text-center mb-4">Upload Aufgabe</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uploud</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styless.css">
+  </head>
+  <body>
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center mt-5 my-5">
+      <div class="d-flex flex-column bg-light rounded-3 p-5 justify-content-center align-items-center">
+        <h1 class="main-text-center mb-2">Uploud Aufgabe</h1>
         <hr class="border-top border-1 border-secondary w-100 mb-5">
         <form method="post">
           <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required>
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" required>
           </div>
           <div class="mb-3">
-            <label for="beschreibung" class="form-label">Beschreibung</label>
-            <input type="text" class="form-control" id="beschreibung" required>
+            <label class="form-label">Beschreibung</label>
+            <input type="Beschreibung" class="form-control" required>
           </div>
           <div class="mb-3">
-            <label for="hinweis" class="form-label">Hinweis</label>
-            <input type="text" class="form-control" id="hinweis" required>
+            <label class="form-label">Hinweis</label>
+            <input type="Hinweis" class="form-control" required>
           </div>
           <div class="mb-3">
-           
+            <label for="fach" class="form-label">Fach</label>
             <select class="form-select" id="fach" required>
+              <option value="" selected></option>
               <option value="fach1">Einführung Informatik</option>
               <option value="fach2">Einführung Programmierung</option>
               <option value="fach3">Computer Architektur</option>
             </select>
           </div>
           <div class="mb-3">
-           
+            <label for="kategorie" class="form-label">Kategorie</label>
             <select class="form-select" id="kategorie" required>
+              <option value="" selected></option>
               <option value="kategorie1">Kategorie 1</option>
               <option value="kategorie2">Kategorie 2</option>
               <option value="kategorie3">Kategorie 3</option>
             </select>
           </div>
           <div class="mb-3">
-            <label for="neueKategorie" class="form-label">Neue Kategorie</label>
-            <input type="text" class="form-control" id="neueKategorie" required>
+            <label class="form-label">Neu Kategorie</label>
+            <input type="Neu Kategorie" class="form-control">
           </div>
-          <div class="text-center">
-            <div class="col-12 mt-5">
-              <input type="submit" class="btn btn-primary rounded-5 w-100 " value="Hochladen">
-            </div>
-            <div class="col-12 mt-2 mb-3">
-              <input type="reset" class="btn btn-danger rounded-5 w-100" value="Abbrechen">
+        
+          <div class="d-grid gap-2">
+            <input type="submit" class="btn btn-primary rounded-5" value="Hochladen">
+            <input type="reset" class="btn btn-danger rounded-5" value="Abbrechen">
+          </div>
+          <div class="text-center mt-4">
+            For more information <a href="#">Info</a>
+          </div>
         </form>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
