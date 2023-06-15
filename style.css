@@ -8,12 +8,17 @@ body {
 }
 .main-text-center{
    
-  font-family: Georgia, 'Times New Roman', Times, serif;;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .btn-img {
   width: 20px;
   height: 20px;
+}
+@media screen and (max-width: 786px) {
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 }
 
 
