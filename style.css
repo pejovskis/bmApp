@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
   height: 100vh;
   background: linear-gradient(120deg,#2980b9,#8e44ad);
@@ -17,7 +19,7 @@ body {
 }
 @media screen and (max-width: 786px) {
   body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif ;
   }
 }
 
